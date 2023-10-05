@@ -80,3 +80,35 @@ It should be obvious that when sending messages trough other agents, some privac
 so keep sending and handling messages as simple as possible, but for privacy reasons that might no be a very good idea. Below you'll find some notes on how **DIDComm** can **mitigate** privacy risks
 
 ### Recording Metadata
+Even tho mediators and relays can not see the contents of the messages they are routing. They do know a lot of other information, such as:
+- The fact that the message was sent.
+- From where it was received.
+- How big it is.
+- When it was sent.
+- Where it will go next.
+
+Collecting all this **metadata** could eventually still be a breach of privacy. The contents remain private, but it's still possible to collect information about the
+senders' and receivers' social and business relationships. It could be compared to Google knowing about your interests by tracking logins to websites, while not 
+knowing about the details of your interactions with the website.
+
+### DIDComm addressing privacy concerns
+With DIDComm, one of the goals was to address this concern of too much metadata being exposed to intermediaries.
+Encrypting every wrapper and minimal inclusion of information in the *envelope*, limits what metadata can be gathered.
+Using multiple hops in the sequence of getting a message across. Could also help preventing the intermediaries from knowing what the earlier and later steps are.
+
+If you take the earlier picture as an example, let's consider what privacy and security risks exist.
+
+- Every agent in the flow could try to decrypt inner messages which they are not supposed to access. With proper encryption this would fail.
+- Agent 2 (The one trough which faber sends outbound messages), can see the physical messages going to agent 3.
+- As long as other agents are also using agent 3 as an endpoint, agent 2 doesn't know who the end recipient is. (This concept is called
+  **lost in the crowd**, many messages are received at common endpoints and senders don't learn anything about the final destination)
+- Agent 3 can see the physical address of where the message came from (agent 2), but can't see where agent 2 got it from. As long as not only Faber messages go trough
+  Agent 2, it can't know it came from Faber.
+- Since agent 3 routes messages trough agent 4, agent 3 does not know Faber's message is for Alice.
+- Agent 4 is aware of every time Alice receives a message.
+- Agent 4 does not know from whom the messages were received, since they all go trough the agent 3. Since Agent 4 is only used for Alice's inbound messages,
+  it doesn't know anything about Alice's outbound messages.
+- For mobile wallets, data sent between mediator and mobile wallet flows trough the Internet Service Provider. The ISP can know where all the messages
+  are flowing, but can not decrypt their contents.
+- The recipient can ofcourse see all the plaintext data from the message, because they need to display it to an end user or something along the lines of that.
+  This needs to be taken into consideration for security as well. Can you trust the recipient to not share the data with non-trusted parties.
