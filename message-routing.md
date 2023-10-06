@@ -18,7 +18,7 @@ The reasons for this are as follows:
 
 Only the *first* option in the list above is an actual requirement/fact. The rest are options available to the entities managing agents.
 
-![img.png](assets/images/img.png)
+![img.png](assets/images/multiple-mediators-example.png)
 
 ### Intermediaries/mediators
 In the above example the Faber agent might decide to always send messages trough agent 2. Alice might
