@@ -35,6 +35,10 @@ functionalities of the wallet to bypass some restrictions and safeguards.
 ### Open source is important!
 The more open and transparent the software is, more people will be monitoring the code and checking if potential
 back doors are coded in.
+- Code is transparent and auditable. Many eyes are watching and have a mutual interest in the wallet being secure
+- Important issuers and verifiers can be sure that the wallet you are using is safe.
+- Not every company will be implementing their own versions of features that are missing in wallets. Everyone is contributing
+  to one cause, saving money and time.
 
 ### Certification
 Another mechanism to establish trust could be a wallet certification program. They would evaluate wallets and give them
