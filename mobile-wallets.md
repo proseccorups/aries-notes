@@ -38,3 +38,36 @@ about how issuers, holders and verifiers interact that would otherwise have to b
 For wallets working with Indy, wallet deployments will need to decide what Indy ledgers to support. The most 
 common approach is to just support some **test ledgers** that developers are most likely to use and **production ledgers**
 that are most likely to be used by customers.
+
+## Beautiful credentials
+When technology matures, there are going to be more requests for features that make the technology more attractive
+to the general public. One such feature is making credentials more **"beautiful"** in wallets. Organisations
+want to create make their credentials match their **brand** and display the info withing it in the user's native language.
+
+There shouldn't be any **Techno babble** on display that could confuse the user. The answer of the Aries community
+is called the [Overlays Capture Architecture (OCA)](https://humancolossus.foundation/blog/cjzegoi58xgpfzwxyrqlroy48dihwz). This allows issuers to convey the following in their credentials:
+- The name and the description of both the credential and the issuer in multiple languages.
+- Help/support information about the credential in multiple languages.
+- Links to website pages with issuer info/support about the organisation and credentials.
+- Labels and information about each claim/attribute in the credential.
+- The data type and format of each claim in the credential so holder and verifier can properly render the item
+- Branding elements so issuers can convey their brand. (images, colours, backgrounds, logo's)
+
+Below you'll find an example of a credential without (left) and with (right) OCA support.
+![img.png](assets/images/OCA-credentials.png)
+
+## Advanced Chat feature
+Another powerful by product of mobile wallets are Advanced Chat features. Nowadays trust in communication
+is almost completely zero (think about clicking on links in emails being sent). So there is demand for a 
+secure channel of communication.
+
+**DIDComm** can be used to bring that trust back. The following examples could be use cases for such secure messaging:
+- Driver's license authority sends you a message that it needs to be renewed.
+- Your bank sends you a message about something that went wrong with your credit card (fraud, stolen)
+- A user could initiate a message themselves with a question that only the issuer should see, and they can immediately confirm
+  that it's really you who sent it.
+
+## Action menu feature
+Action menu is basically just a contact sending a list of options to another user, with the user on the receiving end
+picking an answer and triggering some kind of event.
+![img.png](assets/images/chat-and-action-menu.png)
