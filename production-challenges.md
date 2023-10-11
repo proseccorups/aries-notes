@@ -60,3 +60,38 @@ automatically add the TAA data to every write. If you add that call to the contr
 no longer have to worry about the TAA in code.
 
 This is only the technical side tho, it's still an agreement and like a contract it should be carefully read.
+
+## Endorsing Transactions
+
+Permission is another important thing, because not just anyone can write to a ledger. Rules are generally configurable,
+but on the sovrin ledgers writing requires a **Transaction Endorser**. An endorser is an organisation that has 
+accepted to be one. They have a DID with the endorser role and have signed legal agreements concerning endorsement.
+Endorsers can:
+- Write objects on the ledger
+- Create author DIDs on the Ledger (DIDs with no permissions)
+- Sign write object transactions created by author DIDs, accepting them so they are written to the ledger.
+
+**Signing transactions** of others can be used in the following ways:
+- An organisation with one issuer wouldn't need signing and can just write transactions directly using its endorser DID
+- Large enterprises might have one endorser and all the other issuing agents in that enterprise would have to request permission
+  from that endorser.
+- SSIaaS (SSI as a Service) organisations might provide services that do all this for you. They would sign your write 
+  transactions for you.
+
+Transactions that are written to the ledger (e.g. Sovrin), it's not the author that pays for it, but the endorser.
+Although the Author still has to adhere to the TAA, the endorser is responsible for making sure that both author
+and endorsor adhere to the legal agreements involved.
+
+Endorsing makes the writing process a bit more complex. A non endorser must first get an endorser DID. With that they can
+write transactions with the following steps:
+- Author creates transaction, doesn't send to ledger yet
+- Author sends transaction to endorser.
+- If endorser agrees, they add a signature to the transaction.
+- Endorser sends signed transaction back to author.
+- Author submits signed transaction to ledger
+- Ledger verifies signatures.
+- Ledger evaluates permissions agains rules in place.
+- Ledger writes the transaction.
+
+Aries frameworks often have a built-in endorser flow.
+If you want to use ACA-Py as an endorser, take a look at this repository: [Aries Endorser Service](https://github.com/hyperledger/aries-endorser-service)
