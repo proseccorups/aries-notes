@@ -13,3 +13,5 @@ one in **C#/.NET** and one in **NodeJS/Express**
 
 ### [VON Network Toturial](https://github.com/bcgov/von-network/blob/main/docs/UsingVONNetwork.md)
 A toturial for installing and starting the VON network from the BC government.
+
+### [Another Aries Toturial](https://yunxi-zhang-75627.medium.com/hyperledger-aries-aca-py-agents-setup-and-running-tutorials-part-i-i-i-dev-environment-setup-20ab5a32457e)
