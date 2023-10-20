@@ -19,3 +19,5 @@ A toturial for installing and starting the VON network from the BC government.
 ### [Documentation Running ACA-Py Locally](https://github.com/hyperledger/aries-cloudagent-python/blob/main/DevReadMe.md#running-locally)
 
 ### [Helpfull Github Issue for starting ACA-Py Agent](https://github.com/hyperledger/aries-cloudagent-python/issues/492)
+
+### [Demo going trough Admin API step by step](https://github.com/hyperledger/aries-cloudagent-python/blob/main/demo/AriesOpenAPIDemo.md#use-the-faber-agent-to-create-an-invitation)
