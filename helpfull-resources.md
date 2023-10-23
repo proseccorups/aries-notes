@@ -15,6 +15,7 @@ one in **C#/.NET** and one in **NodeJS/Express**
 A toturial for installing and starting the VON network from the BC government.
 
 ### [Another Aries Toturial](https://yunxi-zhang-75627.medium.com/hyperledger-aries-aca-py-agents-setup-and-running-tutorials-part-i-i-i-dev-environment-setup-20ab5a32457e)
+- [Part 7 ZKP and presenting proof](https://yunxi-zhang-75627.medium.com/hyperledger-aries-aca-py-agents-setup-and-running-tutorials-part-vii-proof-request-reveal-and-8e3b86246578)
 
 ### [Documentation Running ACA-Py Locally](https://github.com/hyperledger/aries-cloudagent-python/blob/main/DevReadMe.md#running-locally)
 
