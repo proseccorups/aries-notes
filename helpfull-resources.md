@@ -3,6 +3,7 @@ Contains code and instructions for running the BC governments Issuer Kit Verifia
 
 ### [Usefull Getting Started Toturial For Aries](https://ldej.nl/post/becoming-a-hyperledger-aries-developer-getting-started/)
 Think all the documentation is a bit scattered? This toturial should help you on your way with developing on Aries
+- [Part 7 Present proof](https://ldej.nl/post/becoming-a-hyperledger-aries-developer-part-7-present-proof/)
 
 ### [Aries Docker Images](https://hub.docker.com/r/bcgovimages/aries-cloudagent)
 Some of the ready-made images available for ACA-Py and the necessary dependencies.
