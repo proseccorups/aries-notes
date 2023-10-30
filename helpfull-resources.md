@@ -25,3 +25,5 @@ A toturial for installing and starting the VON network from the BC government.
 ### [Demo going trough Admin API step by step](https://github.com/hyperledger/aries-cloudagent-python/blob/main/demo/AriesOpenAPIDemo.md#use-the-faber-agent-to-create-an-invitation)
 
 ### [Credential Revocation Documentation](https://github.com/hyperledger/aries-cloudagent-python/blob/main/docs/GettingStartedAriesDev/CredentialRevocation.md)
+
+### [AMdEX Medical Usecase Mock Data](https://github.com/AMS-ix-code/amdex-monorepo/blob/staging/apps/medicalresearch/lib/mock-server-data/medicalresearchdata.ts)
