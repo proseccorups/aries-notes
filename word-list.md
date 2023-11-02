@@ -7,3 +7,4 @@
 - **DIDDoc**: Upon resolving a DID, this is the object that you get, which has some information about the connection.
 - **RFC**: Request For Comments; A design document describing information about a proposal for a new feature in Aries
 - **Administrative API**: API that provides administrative functionalities for managing an Aries Agent.
+- **KYC**: Know Your Customer
