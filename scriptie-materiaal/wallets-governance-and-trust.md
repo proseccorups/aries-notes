@@ -5,7 +5,7 @@ difficult part is to know if the entity on the receiving end is trustworthy. Eve
 decentralized, a mechanism needs to be put in place to enable human trust as well. This image shows the questions
 that need to be asked in a trust based ecosystem.
 
-![img.png](assets/images/trust-ecosystem.png)
+![img.png](../assets/images/trust-ecosystem.png)
 
 From the perspective of a **wallet user**, the biggest questions are whether issuers and verifiers can be trusted or not.
 

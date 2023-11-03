@@ -1,5 +1,14 @@
 # Self Sovereign Identity
 
+## What is the idea behind SSI
+SSI is a technology that is accomplished by multiple Hyperledger projects working together in unison. With SSI, the idea 
+is that instead of relying on a central authority to hold your data, you are in control of it yourself. Using the cryptographic nature of 
+the technologies you are able to prove your identity and others can verify it.
+
+SSI is not about information that you have provided yourself or is "made up" by you. Verifiable Credentials that you use and present are always 
+issued by someone else who has authority to do so. What makes verifiable credentials useful, is the trust that verifiers have in the issuers.
+
+
 ## What are the problems it's trying to solve?
 
 ### User ID + Password
