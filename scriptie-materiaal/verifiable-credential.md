@@ -3,8 +3,6 @@
 ## Words and Terms
 - **Claim:** An assertion about the holder of the credential. E.g. Name: niek, age: 25
 
-
-
 ## The old way of doing things
 The concept of using some form of a credential for identification/authentication is not something unique to Hyperledger and SSI, and 
 it's not even a new concept to begin with. We have been giving out 'paper' credentials for a long time now. An authority would 
