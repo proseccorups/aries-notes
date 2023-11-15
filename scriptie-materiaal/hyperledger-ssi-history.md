@@ -35,7 +35,7 @@ Aries was created with the philosophy of being a flexible tool for implementing 
 are not the only ones of their kind. Aries is an agent that can use DIDs and Verifiable Credentials from multiple ecosystems and was 
 officially accepted as a Hyperledger project in March 2019.
 Aries is designed so that no matter how the SSI world evolves over the years, Aries is the tool that you can keep relying on 
-for implementing SSI. At it's core, Aries is a set of protocol specifications that let agents interact with eachother using interactions
+for implementing SSI. At it's core, Aries is a set of protocol specifications that let agents interact with each other using interactions
 based on DIDs and higher level protocols to accomplish whatever SSI related goal they might have, be it issuing, presenting or verifying 
 credentials. Using protocols ensures flexibility, an example being supporting different kinds of credential types within a short timespan.
 
