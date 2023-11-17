@@ -12,7 +12,7 @@ The reasons for this are as follows:
 - Mobile wallets do not have an endpoint. So other agents can not *directly* send messages to them.
 - Entities might want to minimize correlation of their messages, so instead of having a unique endpoint, many agents
   might share the same endpoint. This way their messages are *hidden in the crowd.*
-- Entities might not want inbound and outbound messages to be correlated. Therefore they might use different pahts for the two.
+- Entities might not want inbound and outbound messages to be correlated. Therefore, they might use different paths for the two.
 - An enterprise might want to have a gateway agent which is responsible for talking to the *big bad internet*. The other agents
   from that organisation will just talk to the gateway.
 
